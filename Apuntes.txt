@@ -1,0 +1,11 @@
+Crear un vínculo entre las librerias y el proyecto -> mklink /D node_modules ..\..\node_modules.
+
+Quitar warnings -> ng serve --preserve-synlinks.
+
+packagw.json -> "start": "ng serve --preserve-symlinks", con esto al ejecutar npm start ejecuta lo mismo
+
+Programa para crear vínculo de carpetas -> link shell extension 
+
+Crear nuevo proyecto - > ng new -si hola-mundo3 -> https://github.com/angular/angular-cli/wiki/new
+
+documentación -> https://github.com/angular/angular-cli/wiki
