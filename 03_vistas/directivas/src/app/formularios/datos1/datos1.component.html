@@ -1,0 +1,31 @@
+<div>
+
+  <p>
+    <label for="idea">Dime tu idea: </label>
+    <input type="text" id="idea" name="idea" [(ngModel)]="sIdea">
+    <label for="autor">Autor: </label>
+    <input type="text" id="autor" name="autor" [(ngModel)]="oLibro.autor">
+    <label for="libro">Libro: </label>
+    <input type="text" id="libro" name="libro" [(ngModel)]="oLibro.libro">
+  </p>
+  <button (click)="btnInsert($event)">Añadir</button>
+  <button (click)="btnOrdenar($event)">Ordenar</button>
+  <button (click)="btnEliminar()">Borrar elemento</button>
+  <p>
+  Precio :{{precio | currency}}
+  </p>
+  <div *ngIf="aIdeas.length">
+    <h2>Lista de ideas:</h2>
+    <ul>
+      <li [hidden]="idea == 'a' ? true : false" *ngFor="let idea of aIdeas; let i = index" id="lista{{i}}">{{idea}}
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="aLibros.length">
+      <h2>Lista de libros:</h2>
+      <ul>
+        <li *ngFor="let libre of aLibros;">{{libre.autor}} - {{libre.libro}}
+        </li>
+      </ul>
+    </div>
+</div>

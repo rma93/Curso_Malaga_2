@@ -9,3 +9,5 @@ Programa para crear vínculo de carpetas -> link shell extension
 Crear nuevo proyecto - > ng new -si hola-mundo3 -> https://github.com/angular/angular-cli/wiki/new
 
 documentación -> https://github.com/angular/angular-cli/wiki
+
+Subida a PRO -> "ng build", nos guarda toda la compilación en la carpeta "dist" , y no levanta ningún servidor (npm build -> ng build --preserve-symlinks -t production)

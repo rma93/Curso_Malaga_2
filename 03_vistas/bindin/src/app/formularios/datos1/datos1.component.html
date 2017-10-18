@@ -1,0 +1,13 @@
+<div>
+
+  <p>
+    <label for="nombre">Dime tu nombre: </label>
+    <!--<input type="text" id="nombre" name="name" [(ngModel)]="sNombre">-->
+    <input type="text" id="nombre" name="name" #inputNombre>
+  </p>
+  <button (click)="btnBorrar($event)">Borrado</button>
+  <h2>
+    <!--<p>Holaa {{sNombre.toUpperCase()=="FERNANDO" ? "me rio de ti" : sNombre.toUpperCase() }}</p>-->
+    <p>{{inputNombre.value.toUpperCase()=="" ? "Error, debe de rellenar los datos obligatorios" : inputNombre.value.toUpperCase()}}</p>
+  </h2>
+</div>
