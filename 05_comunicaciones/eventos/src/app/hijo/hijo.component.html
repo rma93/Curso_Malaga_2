@@ -1,0 +1,11 @@
+<div>
+    <p>hijo works!</p>
+    <p>Me llamo {{usuario}}</p>
+    <p><button (click)="btnBorrar()">No me gusta {{usuario}}</button></p>
+    <input type="text" placeholder="Nombre que me gusta" [(ngModel)]="nombre">
+ <ul>
+        <li *ngFor="let libro of aLibros; let i = index" id="lista{{i}}">
+            <p>Resultado:{{libro | json}}</p>
+        </li>
+      </ul>
+</div>

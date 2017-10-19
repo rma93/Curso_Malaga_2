@@ -1,0 +1,9 @@
+<div>
+    <h2>padre works!</h2>
+    <input type="text"
+        placeholder="Escribe el nombre del hijo"
+        [(ngModel)]="sName">
+    <app-hijo [usuario]="sName"
+        (eventoBorrar)="borrar($event)"></app-hijo>
+<p>El hijo se llama {{sName}}</p>
+</div>
